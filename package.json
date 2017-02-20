@@ -1,0 +1,38 @@
+{
+  "name": "js-scafold",
+  "version": "0.0.1",
+  "description": "A minimal javascript project with eslint, flow, mocha and iron-node preconfigured",
+  "scripts": {
+    "check": "npm run lint && npm run flow && npm test",
+    "debug": "iron-node node_modules/.bin/_mocha  --require ironnodehook",
+    "flow": "flow",
+    "lint": "eslint src/ test/",
+    "test": "babel-node --plugins rewire node_modules/.bin/_mocha --require mochahook --timeout"
+  },
+  "keywords": [
+    "eslint",
+    "mocha",
+    "flow"
+  ],
+  "author": "StyMaar",
+  "license": "GPL",
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-rewire": "^1.0.0",
+    "babel-plugin-syntax-flow": "^6.18.0",
+    "babel-plugin-transform-class-properties": "^6.22.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.22.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-preset-es2017": "^6.22.0",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "eslint": "^3.15.0",
+    "eslint-config-finfrog": "git+ssh://git@github.com:finfrog/eslint-config-finfrog.git",
+    "eslint-plugin-flow-vars": "^0.5.0",
+    "eslint-plugin-flowtype": "^2.30.0",
+    "flow-bin": "^0.38.0",
+    "iron-node": "^3.0.17",
+    "mocha": "^3.2.0"
+  },
+}

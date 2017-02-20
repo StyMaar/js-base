@@ -1,0 +1,9 @@
+{
+    "presets": ["es2017"],
+    "plugins": [
+        "syntax-flow",
+        "transform-flow-strip-types",
+        "transform-class-properties",
+        "transform-es2015-modules-commonjs",
+    ],
+}

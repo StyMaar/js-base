@@ -1,0 +1,48 @@
+{
+    "env": {
+        "es6": true,
+        "mocha": true,
+        "node": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "plugins": [
+        "flowtype",
+        "flow-vars"
+    ],
+    "rules": {
+        "flow-vars/define-flow-type": 1,
+        "flow-vars/use-flow-type": 1,
+        "flowtype/require-parameter-type": "error",
+        "flowtype/require-return-type": [
+            "error",
+            "always",
+            {
+                "annotateUndefined": "never"
+            }
+        ],
+        "flowtype/space-after-type-colon": [
+            "error",
+            "always"
+        ],
+        "flowtype/space-before-type-colon": [
+            "error",
+            "never"
+        ],
+        "flowtype/type-id-match": [
+            "error",
+            "^([A-Z][A-z0-9]+)$"
+        ]
+    },
+    "settings": {
+        "flowtype": {
+            "onlyFilesWithFlowAnnotation": true
+        }
+    },
+    "globals": {
+        "expect"
+    },
+    "extends": "finfrog"
+}
